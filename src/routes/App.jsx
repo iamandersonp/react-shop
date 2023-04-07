@@ -8,6 +8,7 @@ import {
 import Layout from '../containers/Layout';
 import Login from '../containers/Login';
 import RecoveryPassword from '../containers/RecoveryPassword';
+import NotFound from '../pages/NotFound';
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
             path="/recovery"
             component={RecoveryPassword}
           />
-          <Route path="*" component={Login} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </Layout>
     </BrowserRouter>
